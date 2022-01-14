@@ -1,0 +1,271 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                common style                                */
+/* -------------------------------------------------------------------------- */
+.container{
+    max-width: 870px;
+    background-color: #FFFFFF;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: auto;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 30px;
+    
+}
+.section-title{
+    color: #562EFF;
+    font-size: 20px;
+    padding: 30px 0;
+}
+hr{
+    margin: 10px 0;
+    color: rgb(184, 184, 184);
+    border-bottom: none;
+}
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                               header secction                              */
+/* -------------------------------------------------------------------------- */
+#header{
+    width: 100%;
+    background-color: #562EFF;
+    padding: 10px 0;
+}
+.nav-bar{
+    width: 870px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 30px;
+}
+.logo h2{
+    color: white;
+    margin-left: 10px;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav ul li{
+list-style: none;
+margin-left: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li img{
+    width: 45px;
+}
+
+/* --------------------------- top player swection -------------------------- */
+.players{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+.player{
+   display: flex;
+   align-items: center;
+   flex-basis: 28%;
+   margin-bottom: 30px;
+}
+.player img{
+    width: 56px;
+}
+.player p{
+    margin-left: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+/* ------------------------------ bLOG sECTION ------------------------------ */
+.blogs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.single-blog{
+    display: flex;
+    flex-basis: 45%;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.single-blog img{
+    width: 177px;
+    
+}
+.blog-desc{
+    text-align: left;
+    margin-left: 16px;
+}
+.blog-desc h2{
+    font-size: 16px;
+    padding: 0;
+}
+.blog-desc small{
+    text-transform: capitalize;
+    color: gray;
+}
+
+
+/* ----------------------------- Courses section ---------------------------- */
+.courses{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding-bottom: 40px;
+    flex-wrap: wrap;
+}
+.single-course{
+    flex-basis: 31%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding:15px 10px;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+    transition: transform .5s;
+}
+.single-course img{
+    width: 100%;
+    border-radius: 10px;
+}
+.single-course h2{
+    font-size: 16px;
+    padding: 0;
+    margin-top: 10px;
+    text-align: left;
+}
+.single-course small{
+    color: #ED6B4F;
+    font-weight: 500;
+    text-align: left;
+    display:block;
+    padding-bottom: 5px
+    ;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.course-info i{
+    font-size: 12px;
+    color: orange;
+}
+.course-info i:last-child{
+    color: gray;
+}
+.course-info small{
+    font-size: 12px;
+    color: gray;
+}
+.course-info .time{
+    display: flex;
+    align-items: center;
+    background-color: rgba(196, 18, 18, 0.267);
+    padding: 4px 8px;
+    border-radius: 30px;
+    justify-content: space-between;
+    font-size: 12px;
+    
+}
+.course-info .time i{
+    color: rgba(255, 0, 0, 0.466);
+    margin-right: 5px;
+
+}
+.single-course:hover{
+    transform: translateY(-8px);
+}
+
+
+
+/* Responsive CSS  */
+@media screen and (max-width:770px) {
+    
+/* top player */
+.player{
+    flex-basis:48%;
+    margin-bottom: 30px;
+ }
+ .single-blog{
+     flex-basis: 100%;
+ }
+.single-course{
+    flex-basis: 100%;
+    margin-bottom: 20px;
+}
+.single-course img{
+    width: 100%;
+}
+
+.nav-bar{
+    width: 100%;
+    flex-wrap: nowrap;
+    padding: 0 10px;
+}
+
+.logo img{
+    width: 25px;
+}
+.logo h2{
+    color: white;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+nav ul li{
+margin-left: 16px;
+}
+
+nav ul li img{
+    width: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
